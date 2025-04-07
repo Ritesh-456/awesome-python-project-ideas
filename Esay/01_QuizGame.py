@@ -56,4 +56,4 @@ if suggestion == "yes":
         print(f"Better Luck Next Time !!\nYour score is {count}")
 
 else:
-    print("Thank you")
+    quit()
