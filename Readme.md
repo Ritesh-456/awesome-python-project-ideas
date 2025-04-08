@@ -22,14 +22,6 @@ A classic game where the user plays against the computer.
 
 A text-based adventure game where the user's choices determine the story's outcome.
 
-### #12 - Alarm Clock
-
-A basic alarm clock application that plays a sound at a specified time.
-
-### #13 - Password Generator
-
-A script that generates random and secure passwords based on user-defined criteria (length, inclusion of numbers, symbols, etc.).
-
 ---
 
 ## Medium
@@ -68,6 +60,18 @@ A program that tests the user's typing speed and accuracy.
 
 **Curses Docs:** https://docs.python.org/3/howto/curses.html
 
+### #12 - Alarm Clock
+
+A basic alarm clock application that plays a sound at a specified time.
+
+### #13 - Password Generator
+
+A script that generates random and secure passwords based on user-defined criteria (length, inclusion of numbers, symbols, etc.).
+
+### #14 - Shortest Path Finder
+
+An implementation of an algorithm (like Dijkstra's or A\*) to find the shortest path between two points in a graph or grid.
+
 ### #15 - NBA Stats & Current Scores
 
 A script that fetches and displays real-time or recent NBA statistics and scores using an API.
@@ -89,10 +93,6 @@ A program that automatically backs up specified files or directories at regular 
 ---
 
 ## Advanced
-
-### #14 - Shortest Path Finder
-
-An implementation of an algorithm (like Dijkstra's or A\*) to find the shortest path between two points in a graph or grid.
 
 ### #19 - Mastermind/4 Color Match
 
