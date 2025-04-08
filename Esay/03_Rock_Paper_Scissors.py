@@ -19,11 +19,9 @@ while True:
 
             elif user == computer:
                 print(f"🤝 It's a tie! 🤝\nComputer chose {computer} and you chose {user}")
-                break 
 
             else:
                 print(f"😞 You lose! 😞\nComputer chose {computer} and you chose {user}")
-                break  
             
         except ValueError as e:
             print(f"Error: {e}")
