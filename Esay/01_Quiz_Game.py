@@ -1,68 +1,55 @@
-print("Welcome to my Quiz Menia")
+def main():
+    print("Welcome to my Quiz Mania")
 
-suggestion = input("Do you Want to guess and play? ").lower()
-count = 0
-wrong = 0
-if suggestion == "yes":
+    suggestion = input("Do you Want to guess and play? ").strip().lower()
+
+    if suggestion != "yes":
+        quit()
+
     print("lets start....\nI will ask 6 questions and you need to score at least 5 out of 6")
-    question1 = input("Q1: Which animal is known as the 'Ship of the Desert'?: ").lower()
 
-    if question1 == "camel":
-        print("Correct....")
-        count += 1
-    else:
-        print("!! Wrong !!")
-        wrong += 1
+    questions = [
+        {
+            "prompt": "Q1: Which animal is known as the 'Ship of the Desert'?: ",
+            "answers": ["camel"],
+        },
+        {
+            "prompt": "Q2: How many days are there in a week?: ",
+            "answers": ["7", "seven", "7 days", "seven days"],
+        },
+        {
+            "prompt": "Q3: How many hours are there in a day?: ",
+            "answers": ["24", "twenty four", "24 hours", "twenty four hours"],
+        },
+        {
+            "prompt": "Q4: Which animal is known as the king of the jungle?: ",
+            "answers": ["lion"],
+        },
+        {
+            "prompt": "Q5: Name the National bird of India?: ",
+            "answers": ["peacock", "the peacock"],
+        },
+        {
+            "prompt": "Q6: What is the color of the eyes of Ioanna?: ",
+            "answers": ["brown"],
+        },
+    ]
 
-    question2 = input("Q2: How many days are there in a week?: ").lower()
+    count = 0
 
-    if question2 == "7" or question2 == "seven" or question2 == "7 days" or question2 == "seven days":
-        print("Correct....")
-        count += 1
-    else:
-        print("!! Wrong !!")
-        wrong += 1
-
-    question3 = input("Q3: How many hours are there in a day?: ").lower()
-
-    if question3 == "24" or question3 == "twenty four" or question3 == "24 hours" or question3 == "twenty four hours":
-        print("Correct....")
-        count += 1
-    else:
-        print("!! Wrong !!")
-        wrong += 1
-
-    question4 = input("Q4: Which animal is known as the king of the jungle?: ").lower()
-
-    if question4 == "lion":
-        print("Correct....")
-        count += 1
-    else:
-        print("!! Wrong !!")
-        wrong += 1
-
-    question5 = input("Q5: Name the National bird of India?: ").lower()
-
-    if question5 == "peacock" or question5 == "the peacock":
-        print("Correct....")
-        count += 1
-    else:
-        print("!! Wrong !!")
-        wrong += 1
-
-    question6 = input("Q6: What is the color of the eyes of Ioanna?: ").lower()
-
-    if question6 == "brown":
-        print("Correct....")
-        count += 1
-    else:
-        print("!! Wrong !!")
-        wrong += 1
+    for q in questions:
+        answer = input(q["prompt"]).strip().lower()
+        if answer in q["answers"]:
+            print("Correct....")
+            count += 1
+        else:
+            print("!! Wrong !!")
 
     if count >= 5:
         print(f"Congrats YOU WIN !!\nYour score is: {count}")
     else:
         print(f"Better Luck Next Time !!\nYour score is {count}")
 
-else:
-    quit()
+
+if __name__ == "__main__":
+    main()
