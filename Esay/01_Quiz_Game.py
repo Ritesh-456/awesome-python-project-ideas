@@ -4,7 +4,7 @@ suggestion = input("Do you Want to guess and play? ").lower()
 count = 0
 wrong = 0
 if suggestion == "yes":
-    print("lets start....\nI will ask 5 questions and you need to score at least 4 out of 5")
+    print("lets start....\nI will ask 6 questions and you need to score at least 5 out of 6")
     question1 = input("Q1: Which animal is known as the 'Ship of the Desert'?: ").lower()
 
     if question1 == "camel":
@@ -50,7 +50,16 @@ if suggestion == "yes":
         print("!! Wrong !!")
         wrong += 1
 
-    if count >= 4:
+    question6 = input("Q6: What is the color of the eyes of Ioanna?: ").lower()
+
+    if question6 == "brown":
+        print("Correct....")
+        count += 1
+    else:
+        print("!! Wrong !!")
+        wrong += 1
+
+    if count >= 5:
         print(f"Congrats YOU WIN !!\nYour score is: {count}")
     else:
         print(f"Better Luck Next Time !!\nYour score is {count}")
